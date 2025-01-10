@@ -1,0 +1,12 @@
+Devellopement informatique,Quel langage est principalement utilisé pour le développement Android ?,Swift,Kotlin,JavaScript,PHP,Kotlin
+Devellopement informatique,Quelle architecture est couramment utilisée pour séparer les responsabilités dans une application ?,MVC,REST,HTML,SQL,MVC
+Devellopement informatique,Quel est le rôle principal d'un ORM (Object-Relational Mapping) ?,Gérer l'interface utilisateur,Gérer la communication avec la base de données,Effectuer des tests unitaires,Compiler le code source,Gérer la communication avec la base de données
+Devellopement informatique,Quel est le nom du gestionnaire de dépendances pour les projets Kotlin ?,npm,Maven,Gradle,Ant,Gradle
+Devellopement informatique,Quel est le principal avantage de l'utilisation des API REST ?,Une meilleure sécurité, La facilité de mise à jour des données,indépendance entre le client et le serveur,La compatibilité avec les bases de données relationnelles,indépendance entre le client et le serveur
+Devellopement informatique,Quel est le framework JavaScript le plus populaire pour le développement d'applications web ?,Angular,React,Vue.js,Bootstrap,React
+Devellopement informatique,Dans quel langage le code Android natif peut-il être écrit, autre que Kotlin ?,Ruby,Java,C++,Swift,Java
+Devellopement informatique,Que signifie l'acronyme SQL ?,Simple Query Language,Structured Query Language,Standard Question Language,Syntax Query Language,Structured Query Language
+Devellopement informatique,Quel est le nom de la plateforme d'intégration continue et de livraison continue (CI/CD) la plus couramment utilisée ?,Jenkins,GitHub,Docker,Kubernetes,Jenkins
+Devellopement informatique,Quelle méthode est utilisée pour gérer les erreurs dans Kotlin ?,Try-Catch,Assert,Log,Debug,Try-Catch
+Devellopement informatique,Quelle bibliothèque JavaScript est utilisée pour manipuler le DOM ?,React,jQuery,Angular,Vue.js,jQuery
+Devellopement informatique,Lequel des langages suivants est typé statiquement ?,Python,JavaScript,Kotlin,PHP,Kotlin
