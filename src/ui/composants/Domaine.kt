@@ -23,7 +23,12 @@ fun domaineUi(domChoix : String){
 
         try{
             val task = executor.submit<String?> {
-                readLine() ?: throw IllegalArgumentException("\t \uD83D\uDE22 Entrée vide")
+                val input = readLine()?.trim() ?: throw IllegalArgumentException("\t\t\t 😢 Entrée vide")
+
+                if (input.length != 1 || !input[0].isLetter()) {
+                    throw IllegalArgumentException("\t\t\t ❌ Entrée invalide : Veuillez entrer une lettre uniquement.")
+                }
+                input
             }
 
             val response = try {
