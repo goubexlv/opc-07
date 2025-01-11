@@ -10,3 +10,15 @@ Devellopement informatique,Quel est le nom de la plateforme d'intégration conti
 Devellopement informatique,Quelle méthode est utilisée pour gérer les erreurs dans Kotlin ?,Try-Catch,Assert,Log,Debug,Try-Catch
 Devellopement informatique,Quelle bibliothèque JavaScript est utilisée pour manipuler le DOM ?,React,jQuery,Angular,Vue.js,jQuery
 Devellopement informatique,Lequel des langages suivants est typé statiquement ?,Python,JavaScript,Kotlin,PHP,Kotlin
+Securite informatique,Quel type d'attaque intercepte les communications entre deux parties pour voler des informations sensibles ?,Phishing,Man-in-the-Middle,Ransomware,DoS,Man-in-the-Middle
+Securite informatique,Quel est l'objectif principal d'un pare-feu ?,Bloquer les virus,Filtrer les connexions réseau,Sauvegarder les données,Crypter les fichiers,Filtrer les connexions réseau
+Securite informatique,Comment s'appelle une attaque visant à submerger un serveur avec un trafic excessif ?,SQL Injection,Cross-Site Scripting,Denial of Service,Keylogger,Denial of Service
+Securite informatique,Quel est un exemple courant d'une attaque basée sur l'ingénierie sociale ?,Phishing,Ransomware,Brute force,DoS,Phishing
+Securite informatique,Quel type de logiciel malveillant espionne les activités de l'utilisateur ?,Adware,Spyware,Ransomware,Trojan,Spyware
+Securite informatique,Quel est le rôle d'un antivirus ?,Détecter et supprimer les logiciels malveillants,Optimiser les performances système,Sauvegarder les fichiers,Gérer les connexions réseau,Détecter et supprimer les logiciels malveillants
+Securite informatique,Quel système est souvent la cible d'attaques DDoS ?,Serveurs DNS,Bases de données,Applications bureautiques,Navigateurs web,Serveurs DNS
+Securite informatique,Quelle méthode de cryptographie utilise une clé publique et une clé privée ?,Chiffrement symétrique,Hachage,Chiffrement asymétrique,Steganographie,Chiffrement asymétrique
+Securite informatique,Quel terme désigne un logiciel malveillant qui exige une rançon ?,Spyware,Trojan,Ransomware,Adware,Ransomware
+Securite informatique,Quel outil est utilisé pour analyser les paquets réseau ?,Wireshark,Metasploit,Nmap,Burp Suite,Wireshark
+Securite informatique,Quel protocole est utilisé pour sécuriser les communications sur Internet ?,HTTP,FTP,SSH,HTTPS,HTTPS
+Securite informatique,Quelle mesure réduit les risques liés à une clé de chiffrement compromise ?,Rotation régulière des clés,Compression des données,Sauvegarde incrémentielle,Mise en cache des clés, Rotation régulière des clés

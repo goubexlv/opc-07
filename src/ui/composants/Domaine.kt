@@ -21,48 +21,53 @@ fun domaineUi(domChoix : String){
         println("\t \t \td) ${question.opt4}")
         print("\t \t \tVotre choix : ")
 
-        val task = executor.submit<String?> {
-            readLine()
-        }
-
-        val response = try {
-            task.get(10, TimeUnit.SECONDS)
-        } catch (e: Exception) {
-            null
-        }
-
-        if (response != null) {
-            when (response){
-                "a" -> {
-                    if (question.opt1 == question.correct){
-                        score +=2
-                    }
-                }
-                "b" -> {
-                    if (question.opt2 == question.correct){
-                        score +=2
-                    }
-                }
-                "c" -> {
-                    if (question.opt3 == question.correct){
-                        score +=2
-                    }
-                }
-                "d" -> {
-                    if (question.opt4 == question.correct){
-                        score +=2
-                    }
-                }
-                else -> {
-                    println("\n\t \t \tD'accord bravo pour le choix .")
-                    println(" ")
-                }
+        try{
+            val task = executor.submit<String?> {
+                readLine() ?: throw IllegalArgumentException("\t \uD83D\uDE22 Entrée vide")
             }
 
-        } else {
-            println("\n\t \t \tTemps écoulé !")
-            println("")
+            val response = try {
+                task.get(10, TimeUnit.SECONDS)
+            } catch (e: Exception) {
+                null
+            }
+
+            if (response != null) {
+                when (response){
+                    "a" -> {
+                        if (question.opt1 == question.correct){
+                            score +=2
+                        }
+                    }
+                    "b" -> {
+                        if (question.opt2 == question.correct){
+                            score +=2
+                        }
+                    }
+                    "c" -> {
+                        if (question.opt3 == question.correct){
+                            score +=2
+                        }
+                    }
+                    "d" -> {
+                        if (question.opt4 == question.correct){
+                            score +=2
+                        }
+                    }
+                    else -> {
+                        println("\n\t \t \tD'accord bravo pour le choix \uD83D\uDE43.")
+                        println(" ")
+                    }
+                }
+
+            } else {
+                println("\n\t \t \tTemps écoulé ! ⏲\uFE0F ")
+                println("")
+            }
+        }catch (e: IllegalArgumentException){
+
         }
+
 
         i++
 
@@ -71,7 +76,7 @@ fun domaineUi(domChoix : String){
     executor.shutdown()
     println("")
 
-    println("\t \t \t--- ${blue}Résultat final$reset ---")
+    println("\t \t \t${blue}--- Résultat final \uD83D\uDE08  ---$reset")
     println("\t \t \t${blue}Nom$reset: $currentName")
     println("\t \t \t${blue}Domaine$reset: $domChoix")
     if(score in 0..9){
@@ -83,7 +88,7 @@ fun domaineUi(domChoix : String){
     qcmService.addScrore(currentName,domChoix,score.toString())
 
     println("")
-    println("\t \t \t ---------------------------------------by 45---------------------------------------")
+    println("\t \t \t ---------------------------------------${green}by 45$reset---------------------------------------")
     println("")
 
 

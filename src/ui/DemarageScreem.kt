@@ -43,8 +43,8 @@ fun startApp() {
                 #               ${blue}Menus${reset}                            #
                 #                                                #
                 #    1️. Faire un quizz                          #
-                #    2️. Voir les scores                         #
-                #    3️. Sortir du programme                     #
+                #    2️. Voir les scores 💬                      #
+                #    3️. Sortir du programme 🚫                  #
                 #                                                #
                 ##################################################
                 """
@@ -93,7 +93,7 @@ fun domaine(){
            #                                                # 
                 """)
     for(dom in listDomaine){
-        print("${i.toString()}\uFE0F. ${dom} \n")
+        println("\t \t \t ${i.toString()}\uFE0F. ${dom} ")
         i++
     }
     print("""
@@ -111,7 +111,7 @@ fun quizz(){
         """
             ##################################################
             #                                                #
-            #    Vielle vous enregistrez                     #
+            #    Vielle vous enregistrez 💾                  #
             #                                                #
             ##################################################
         """
@@ -147,12 +147,12 @@ fun afficheResult(){
         println("\t \t \t Aucun score disponible. \uD83D\uDE22")
 
         println("")
-        println("\t \t \t ---------------------------------------by 45---------------------------------------")
+        println("\t \t \t ---------------------------------------${green}by 45$reset---------------------------------------")
         println("")
         return
     }
 
-    println("\t \t \t${green}--- Résultat final ---$reset")
+    println("\t \t \t${green}--- Résultat final \uD83D\uDE08 ---$reset")
 
     for(scores in listeScore){
         println("\t \t \t${blue}Nom$reset: ${scores.nom}")
@@ -165,7 +165,7 @@ fun afficheResult(){
         println("")
     }
     println("")
-    println("\t \t \t ---------------------------------------by 45---------------------------------------")
+    println("\t \t \t ---------------------------------------${green}by 45$reset---------------------------------------")
     println("")
 }
 
